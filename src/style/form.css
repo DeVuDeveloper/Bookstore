@@ -10,14 +10,13 @@
 
 form {
   display: flex;
-  justify-content: baseline;
   align-items: center;
   gap: 20px;
 }
 
 input {
   padding: 7px 5px;
-  width: 48%;
+  width: 51%;
 }
 
 .options {
