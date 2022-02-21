@@ -1,6 +1,8 @@
+import '../style/category.css';
+
 const Categories = () => (
   <div className="categories-section">
-    <h1>Under construction</h1>
+    <h2>Under construction</h2>
   </div>
 );
 

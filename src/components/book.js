@@ -1,3 +1,5 @@
+import '../style/book.css';
+
 const Books = () => {
   const booksArr = [
     {
@@ -22,9 +24,21 @@ const Books = () => {
               <button type="button" className="edit-btn">Edit</button>
             </div>
           </div>
+          <div className="completed">
+            <h2>
+              0%
+              <br />
+              <span>Completed</span>
+            </h2>
+          </div>
+          <div className="update-progress">
+            <h3>CURRENT CHAPTER</h3>
+            <h5>Introduction</h5>
+            <button className="btn" type="button">UPDATE PROGRESS</button>
+          </div>
         </div>
+
       ))}
-      <div className="line" />
 
     </section>
   );
