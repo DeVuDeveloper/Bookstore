@@ -1,0 +1,12 @@
+:root {
+  --black-two: #000;
+  --light-blue: dogerblue;
+  --white: #fff;
+  --white-two: rgb(150, 142, 142);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

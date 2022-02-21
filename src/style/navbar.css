@@ -1,0 +1,93 @@
+/* stylelint-disable font-family-name-quotes */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.navbar {
+  background-color: var(--white);
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 18px;
+}
+
+.tittle h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #0290ff;
+}
+
+.navbar-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.9px;
+  color: var(--black-two);
+}
+
+.oval {
+  width: 2rem;
+  height: 2rem;
+  padding-top: 5px;
+  border: solid 1px var(--white-two);
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 680px) {
+  .navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px;
+  }
+
+  .navbar-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    font-size: 20px;
+  }
+
+  .tittle h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #0290ff;
+  }
+
+  .navbar-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1.9px;
+    color: var(--black-two);
+  }
+
+  .navbar-link a {
+    text-decoration: none;
+  }
+
+  .oval {
+    width: 2.813rem;
+    height: 2.813rem;
+    margin: 0 0 0 41.5rem;
+    padding: 0.875rem;
+    border: solid 1px var(--white-two);
+  }
+
+  .oval p {
+    color: red;
+    font-size: 30px;
+  }
+}
