@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux';
 import Form from './Form';
 import NewBook from './NewBook';
 import Completed from './Completed';
@@ -5,14 +6,7 @@ import Chapter from './Chapter';
 import '../style/book.css';
 
 const Books = () => {
-  const booksArr = [
-    {
-      id: 1,
-      category: 'Romance',
-      tittle: 'The Higgler',
-      author: 'A.E.Coppard',
-    },
-  ];
+  const booksArr = useSelector((state) => state.booksReducer);
 
   return (
 
@@ -34,5 +28,4 @@ const Books = () => {
 
   );
 };
-
 export default Books;
