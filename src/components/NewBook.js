@@ -1,12 +1,15 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 
-function NewBook({ props }) {
+function NewBook({ book }) {
   const {
-    id, category, tittle, author,
-  } = props;
+
+    id, category, title,
+  } = book;
 
   const dispatch = useDispatch();
 
@@ -17,8 +20,9 @@ function NewBook({ props }) {
   return (
     <div className="book">
       <div className="book-category">{category}</div>
-      <div className="book-title">{tittle}</div>
-      <div className="book-author">{author}</div>
+      <div className="book-tittle">{title}</div>
+
+      <div className="book-author">{id}</div>
       <div className="buttons">
         <button type="button" className="comments-btn">Comments</button>
         <button type="button" id={id} onClick={bookRemove} className="remove-btn">Remove</button>
@@ -30,10 +34,9 @@ function NewBook({ props }) {
 
 NewBook.propTypes = {
   category: PropTypes.string.isRequired,
-  tittle: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  props: PropTypes.arrayOf.isRequired,
-  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  book: PropTypes.arrayOf.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default NewBook;

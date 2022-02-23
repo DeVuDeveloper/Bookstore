@@ -22,7 +22,7 @@ export const getBooks = (payload) => ({
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_BOOKS:
-      return action.payload;
+      return [...action.payload];
     case ADD_BOOK:
       return [...state, action.payload];
     case REMOVE_BOOK:
