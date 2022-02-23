@@ -11,6 +11,7 @@ export const getBooksFromAPI = () => async (dispatch) => {
       title,
     };
   });
+  console.log(books);
   dispatch(getBooks(books));
 };
 
