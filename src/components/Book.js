@@ -1,4 +1,3 @@
-/* eslint-disable import/named */
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getBooksFromAPI } from '../redux/API/getBooksFromAPI';
@@ -19,7 +18,7 @@ const Books = () => {
     <>
       <section className="book-wrapper">
         {booksArr.map((book) => (
-          <div key={book.id} id={book.id} className="book-card">
+          <div key={book.item_id} id={book.item_id} className="book-card">
             <NewBook book={book} />
             <Completed />
             <Chapter />
