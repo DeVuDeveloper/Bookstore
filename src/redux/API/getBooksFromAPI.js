@@ -6,7 +6,7 @@ export const getBooksFromAPI = () => async (storing) => {
   const books = Object.entries(booksArr).map(([id, props]) => {
     const { category, title } = props[0];
     return {
-      id,
+      item_id: id,
       category,
       title,
     };
