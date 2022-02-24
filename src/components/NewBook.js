@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBookFromAPI } from '../redux/API/removeBookFromAPI';
+import '../style/newbook.css';
 
 function NewBook({ book }) {
   const {

@@ -1,0 +1,10 @@
+.btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 3px;
+  background-color: var(--blue-color);
+  font-size: 0.813rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--white-color);
+}

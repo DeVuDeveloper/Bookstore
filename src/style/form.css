@@ -28,5 +28,22 @@ input {
 }
 
 .add-btn {
-  padding: 7px 10px;
+  align-self: flex-start;
+  margin: 1.1rem 2.1rem 10rem 0;
+  padding: 0.6rem 3rem;
+  border-radius: 3px;
+  background-color: var(--blue-color);
+  font-size: 0.813rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--white-color);
+}
+
+.add-btn:hover {
+  background-color: #0187ee;
+}
+
+.add-btn:active {
+  background-color: #0079d6;
 }

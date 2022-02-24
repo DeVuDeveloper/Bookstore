@@ -6,11 +6,13 @@
 }
 
 .navbar-wrapper {
-  display: flex;
-  justify-content: space-between;
+  height: 5.938rem;
+  background-color: var(--white-color);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  text-align: center;
-  padding: 15px;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .navbar-links {
@@ -23,24 +25,39 @@
 
 .tittle h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  color: #0290ff;
+  font-size: 1.875rem;
+  color: var(--blue-color);
+  margin-left: 4rem;
 }
 
 .navbar-link {
+  display: flex;
+  justify-self: start;
+}
+
+.navbar-link li {
+  opacity: 0.5;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 0.813rem;
   letter-spacing: 1.9px;
-  color: var(--black-two);
+}
+
+.navbar-link *:hover {
+  color: var(--blue-color);
+}
+
+.navbar-link li:last-child {
+  padding-left: 1rem;
 }
 
 .oval {
-  width: 2rem;
-  height: 2rem;
-  padding-top: 5px;
-  border: solid 1px var(--white-two);
-  border-radius: 50%;
+  color: var(--blue-color);
+  border: 1px solid var(--border-color);
+  border-radius: 100%;
+  font-size: 2rem;
+  padding: 0.5rem;
+  justify-self: end;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 680px) {

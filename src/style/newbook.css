@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.book-category {
+  font-family: Montserrat, sans-serif;
+  opacity: 0.5;
+  font-size: 0.875rem;
+}
+
+.book-tittle {
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
+  margin: 0.25rem 0;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.buttons *:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.buttons button:nth-child(2) {
+  margin: 0 1rem;
+  padding: 0 1.2rem;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}

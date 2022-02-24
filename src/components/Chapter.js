@@ -1,3 +1,5 @@
+import '../style/chapter.css';
+
 import React from 'react';
 
 const Chapter = () => (
