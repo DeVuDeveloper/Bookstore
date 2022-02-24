@@ -19,11 +19,3 @@
   margin-top: 1rem;
   padding: 1rem;
 }
-
-.book-card:first-child {
-  margin-top: 2rem;
-}
-
-.book-card:last-child {
-  margin-bottom: 2rem;
-}
