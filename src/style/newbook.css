@@ -20,14 +20,6 @@
   color: #4386bf;
 }
 
-.buttons {
-  display: flex;
-  margin-top: 1rem;
-  font-size: 0.875rem;
-  font-weight: 300;
-  color: #4386bf;
-}
-
 .buttons *:hover {
   text-decoration: underline;
   cursor: pointer;
