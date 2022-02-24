@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { removeBook } from '../books/books';
 
 export const removeBookFromAPI = (id) => async (dispatch) => (
