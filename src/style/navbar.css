@@ -23,11 +23,11 @@
   gap: 18px;
 }
 
-.tittle h1 {
+.navbar h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.875rem;
   color: var(--blue-color);
-  margin-left: 4rem;
+  margin-left: rem;
 }
 
 .navbar-link {
@@ -46,17 +46,12 @@
   color: var(--blue-color);
 }
 
-.navbar-link li:last-child {
-  padding-left: 1rem;
-}
-
-.oval {
+.user {
   color: var(--blue-color);
   border: 1px solid var(--border-color);
   border-radius: 100%;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 0.5rem;
-  justify-self: end;
   cursor: pointer;
 }
 
@@ -88,7 +83,6 @@
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     letter-spacing: 1.9px;
-    color: var(--black-two);
   }
 
   .navbar-link a {
@@ -96,15 +90,6 @@
   }
 
   .oval {
-    width: 2.813rem;
-    height: 2.813rem;
     margin: 0 0 0 41.5rem;
-    padding: 0.875rem;
-    border: solid 1px var(--white-two);
-  }
-
-  .oval p {
-    color: red;
-    font-size: 30px;
   }
 }

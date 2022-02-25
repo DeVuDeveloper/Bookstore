@@ -20,15 +20,18 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-wrapper">
-        <div className="tittle">
-          <h1>Bookstore CMS</h1>
-        </div>
+
+        <h1>Bookstore CMS</h1>
+
         <ul className="navbar-links">
 
           {links.map((link) => (
             <li key={link.id} className="navbar-link">
 
               <NavLink
+                style={({ isActive }) => ({
+                  color: isActive ? '#121212' : '#b0b0b0',
+                })}
                 to={link.path}
                 activeclassname="active"
                 exact="true"

@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
+.book {
+  padding: 1rem 0;
+}
+
 .book-category {
   width: 7rem;
   height: 1.125rem;

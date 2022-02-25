@@ -35,12 +35,53 @@ input {
 }
 
 .options {
+  display: inline-block;
+  font: inherit;
+  line-height: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
   margin: 1.1rem 2.1rem 10rem 0;
   padding: 1rem 2rem;
   border-radius: 4px;
   border: solid 1px var(--border-color);
   background-color: var(--white-color);
   width: 25rem;
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.options:focus {
+  background-image:
+    linear-gradient(45deg, #0290ff 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, #0290ff 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  color: #0290ff;
+  outline: 0;
+}
+
+select:first-child {
+  color: rgb(136, 128, 128);
 }
 
 .tittle {
@@ -51,13 +92,13 @@ input {
 .add-btn {
   align-self: flex-start;
   margin: 1.1rem 2.1rem 10rem 0;
-  padding: 0.6rem 5rem;
+  padding: 1rem 1.1rem;
   border-radius: 3px;
   background-color: var(--blue-color);
   font-size: 0.813rem;
   font-weight: bold;
   letter-spacing: 0.5px;
   text-align: center;
-  color: var(--white-color);
-  width: 20rem;
+  color: white;
+  width: 35rem;
 }
