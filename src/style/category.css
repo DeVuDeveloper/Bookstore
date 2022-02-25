@@ -1,4 +1,7 @@
 .categories-section {
   position: relative;
-  left: 40%;
+  left: 35%;
+  top: 340px;
+  font-size: 40px;
+  color: #0290ff;
 }

@@ -1,0 +1,27 @@
+.update-progress h3 {
+  height: 1.125rem;
+  opacity: 0.5;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 0.813rem;
+  color: var(--black-two);
+}
+
+.update-progress h5 {
+  height: 1.313rem;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: var(--black-two);
+}
+
+.btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 3px;
+  background-color: var(--blue-color);
+  font-size: 0.813rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--white-color);
+}

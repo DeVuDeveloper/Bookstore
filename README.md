@@ -1,12 +1,13 @@
 # Bookstore
 
- ## Under constriction...
-  <!-- # Heroku [link](https://sheltered-citadel-41021.herokuapp.com/).
-  # Netlify [link](https://frosty-raman-289022.netlify.app/). -->
+
+## Live preview 
+  ## Heroku [link](https://murmuring-hollows-84269.herokuapp.com/).
+  ## Netlify [link](https://621924426dd1430078c08a58--hopeful-euclid-a4fd8a.netlify.app/).
 
 
 ## Screenshots
-![Example screenshot](img/screenshot.png) -->
+![Example screenshot](src/img/screenshot.png)
 
 ## Contents
 * [Bookstore(#bookstore)
@@ -19,7 +20,8 @@ You can add book and remove book. When you add book you create new book with aut
 
 ## Technologies
 Project is created with:
-* React
+* React 
+
 * Redux
 * JSX
 * CSS
