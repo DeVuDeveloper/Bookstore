@@ -20,7 +20,7 @@ function NewBook({ book }) {
 
   return (
     <div className="book">
-      <div className="book-category">{category}</div>
+      <div className="book-category">{category.charAt(0).toUpperCase() + category.slice(1)}</div>
       <div className="book-tittle">{title}</div>
       <div className="buttons">
         <button type="button" className="comments-btn">Comments</button>

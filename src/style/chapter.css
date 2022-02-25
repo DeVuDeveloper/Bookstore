@@ -1,19 +1,22 @@
 .update-progress {
-  color: #121212;
   align-self: flex-start;
 }
 
 .update-progress h3 {
+  height: 1.125rem;
   opacity: 0.5;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
-  font-weight: 300;
+  color: var(--black-two);
 }
 
 .update-progress h5 {
+  height: 1.313rem;
+  font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: -0.4px;
-  margin: 0.4rem 0 1.4rem;
+  color: var(--black-two);
 }
 
 .btn {

@@ -21,13 +21,13 @@ form {
   font-size: 1rem;
   font-weight: bold;
   color: #888;
-  margin-left: 6.5rem;
+  margin-left: 5.5rem;
   margin-top: 20px;
 }
 
 input {
   margin: 1.1rem 2.1rem 10rem 0.9rem;
-  padding: 1rem 5rem;
+  padding: 0.6rem 2rem;
   border-radius: 4px;
   border: solid 1px var(--border-color);
   background-color: var(--white-color);
@@ -51,7 +51,7 @@ input {
 .add-btn {
   align-self: flex-start;
   margin: 1.1rem 2.1rem 10rem 0;
-  padding: 1rem 5rem;
+  padding: 0.6rem 5rem;
   border-radius: 3px;
   background-color: var(--blue-color);
   font-size: 0.813rem;

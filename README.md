@@ -1,12 +1,12 @@
 # Bookstore
 
- ## Under constriction...
-  <!-- # Heroku [link](https://sheltered-citadel-41021.herokuapp.com/).
-  # Netlify [link](https://frosty-raman-289022.netlify.app/). -->
+ ## Live Preview
+  # Heroku [link](https://sheltered-citadel-41021.herokuapp.com/).
+  # Netlify [link](https://frosty-raman-289022.netlify.app/).
 
 
 ## Screenshots
-![Example screenshot](img/screenshot.png) -->
+![Example screenshot](img/screenshot.png)
 
 ## Contents
 * [Bookstore(#bookstore)

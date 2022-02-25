@@ -6,11 +6,10 @@
   --secondary-bg-color: #fafafa;
   --white-color: #fff;
   --border-color: #e8e8e8;
+  --black-two: #121212;
 }
 
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,12 +20,3 @@
   outline: none;
   background-color: transparent;
 }
-
-/* #root {
-  min-height: 100vh;
-  max-height: 100%;
-  background-color: var(--primary-bg-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
