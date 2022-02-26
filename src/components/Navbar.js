@@ -30,7 +30,7 @@ const Navbar = () => {
 
               <NavLink
                 style={({ isActive }) => ({
-                  color: isActive ? '#121212' : '#b0b0b0',
+                  color: isActive ? '#121212' : '#676767',
                 })}
                 to={link.path}
                 activeclassname="active"

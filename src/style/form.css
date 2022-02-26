@@ -21,7 +21,7 @@ form {
   font-size: 1rem;
   font-weight: bold;
   color: #888;
-  margin-left: 5.5rem;
+  margin-left: 6.5rem;
   margin-top: 20px;
 }
 
@@ -32,6 +32,15 @@ input {
   border: solid 1px var(--border-color);
   background-color: var(--white-color);
   width: 50rem;
+}
+
+::placeholder {
+  color: #c4c4c4;
+  width: 4.75rem;
+  height: 1.188rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  letter-spacing: -0.15px;
 }
 
 .options {
@@ -81,12 +90,15 @@ input {
 }
 
 select:first-child {
-  color: rgb(136, 128, 128);
+  color: #c4c4c4;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  letter-spacing: -0.15px;
 }
 
 .tittle {
   width: 120rem;
-  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .add-btn {

@@ -4,13 +4,14 @@
   font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   color: var(--black-two);
+  margin-bottom: 20px;
 }
 
 .update-progress h5 {
-  height: 1.313rem;
   font-family: RobotoSlab, sans-serif;
   font-size: 1rem;
   font-weight: 300;
+  margin-bottom: 20px;
   letter-spacing: -0.4px;
   color: var(--black-two);
 }
