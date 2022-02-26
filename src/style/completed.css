@@ -50,16 +50,12 @@
     height: 1.125rem;
     margin: 0.438rem 0 0.75rem 0.75rem;
     opacity: 0.5;
-    font-family: Montserrat, sans-serif;
-    color: var(--black-two);
     font-size: 20px;
   }
 
   .line {
     width: 0.125rem;
     height: 4.375rem;
-    border: solid 1px var(--border-color);
     justify-self: center;
   }
-
 }
