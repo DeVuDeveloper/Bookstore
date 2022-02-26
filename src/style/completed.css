@@ -5,22 +5,24 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.book-image {
+  width: 35px;
+  height: 35px;
+}
+
 .progress {
-  width: 4.25rem;
-  height: 2.438rem;
   margin: 0.063rem 0 0 0.688rem;
   font-family: Montserrat, sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
   color: var(--black-two);
 }
 
 .completed {
-  width: 5rem;
-  height: 1.125rem;
   margin: 0.438rem 0 0.75rem 0.75rem;
   opacity: 0.5;
   font-family: Montserrat, sans-serif;
   color: var(--black-two);
+  font-size: 10px;
 }
 
 .line {
@@ -28,4 +30,36 @@
   height: 4.375rem;
   border: solid 1px var(--border-color);
   justify-self: center;
+}
+
+@media screen and (min-width: 680px) {
+  .book-image {
+    width: 70%;
+    height: 90%;
+  }
+
+  .progress {
+    width: 4.25rem;
+    height: 2.438rem;
+    margin: 0.063rem 0 0 0.688rem;
+    font-size: 2rem;
+  }
+
+  .completed {
+    width: 5rem;
+    height: 1.125rem;
+    margin: 0.438rem 0 0.75rem 0.75rem;
+    opacity: 0.5;
+    font-family: Montserrat, sans-serif;
+    color: var(--black-two);
+    font-size: 20px;
+  }
+
+  .line {
+    width: 0.125rem;
+    height: 4.375rem;
+    border: solid 1px var(--border-color);
+    justify-self: center;
+  }
+
 }

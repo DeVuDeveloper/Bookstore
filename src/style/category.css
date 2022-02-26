@@ -1,7 +1,17 @@
 .categories-section {
   position: relative;
-  left: 35%;
   top: 340px;
-  font-size: 40px;
+  font-size: 20px;
   color: #0290ff;
+  padding-left: 50px;
+}
+
+@media screen and (min-width: 680px) {
+  .categories-section {
+    position: relative;
+    left: 35%;
+    top: 340px;
+    font-size: 40px;
+    color: #0290ff;
+  }
 }

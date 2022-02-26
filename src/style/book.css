@@ -19,5 +19,11 @@
   border: 1px solid var(--border-color);
   background-color: var(--white-color);
   margin-top: 1rem;
-  padding: 1rem;
+  padding: 0.4rem;
+}
+
+@media screen and (min-width: 680px) {
+  .book-card {
+    padding: 1rem;
+  }
 }

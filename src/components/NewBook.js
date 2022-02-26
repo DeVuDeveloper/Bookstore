@@ -22,17 +22,17 @@ function NewBook({ book }) {
     <div className="book">
       <div className="book-category">{category.charAt(0).toUpperCase() + category.slice(1)}</div>
       <div className="book-tittle">{title}</div>
-      <div className="buttons">
-        <button type="button" className="comments-btn">Comments</button>
+      <div className="buttons-wrapper">
+        <button type="button" className="buttons">Comments</button>
         <button
           type="submit"
           onClick={bookRemove}
-          className="remove-btn"
+          className="buttons remove-btn"
         >
           Remove
 
         </button>
-        <button type="button" className="edit-btn">Edit</button>
+        <button type="button" className="buttons">Edit</button>
       </div>
     </div>
   );

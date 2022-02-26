@@ -14,7 +14,6 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  margin: 0 3rem;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -23,13 +22,13 @@
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  gap: 18px;
 }
 
 .navbar h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.875rem;
+  font-size: 0.875rem;
   color: var(--blue-color);
+  margin-left: 30px;
 }
 
 .navbar-link {
@@ -48,6 +47,10 @@
   color: var(--blue-color);
 }
 
+.oval {
+  margin-left: 1rem;
+}
+
 .user {
   color: var(--blue-color);
   border: 1px solid var(--border-color);
@@ -59,10 +62,12 @@
 
 @media screen and (min-width: 680px) {
   .navbar-wrapper {
+    height: 5.938rem;
     display: flex;
     justify-content: space-between;
     text-align: center;
     padding: 50px;
+    margin: 0 3rem;
   }
 
   .navbar-links {
@@ -74,17 +79,12 @@
     font-size: 20px;
   }
 
-  .tittle h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #0290ff;
+  .navbar h1 {
+    font-size: 1.875rem;
   }
 
   .navbar-link {
-    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
-    letter-spacing: 1.9px;
     margin-right: 20px;
   }
 
@@ -93,6 +93,6 @@
   }
 
   .oval {
-    margin: 0 0 0 20.5rem;
+    margin-left: 20.5rem;
   }
 }

@@ -2,46 +2,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 
 .book {
-  padding: 1rem 0;
+  padding: 0;
 }
 
 .book-category {
-  width: 7rem;
+  width: 3rem;
   height: 1.125rem;
   margin: 0 4rem 0 0;
   opacity: 0.5;
   font-family: Montserrat, sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.675rem;
   font-weight: bold;
   color: var(--black-two);
-  margin-bottom: 20px;
+  margin-bottom: 7px;
 }
 
 .book-tittle {
   font-family: RobotoSlab, sans-serif;
-  font-size: 1.375rem;
+  font-size: 0.6rem;
   font-weight: bold;
   letter-spacing: -0.2px;
   color: var(--black-two);
-  margin-bottom: 20px;
+  margin-bottom: 7px;
 }
 
 .buttons {
-  height: 1.188rem;
-  margin: 0.188rem 0.938rem 0.125rem 0;
+  margin: 0.188rem 0.138rem 0.125rem 0;
   font-family: RobotoSlab, sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.575rem;
   color: #4386bf;
 }
 
-.buttons *:hover {
-  text-decoration: underline;
-  cursor: pointer;
+@media screen and (min-width: 680px) {
+  .book {
+    padding: 1rem 0;
+  }
+
+  .book-category {
+    width: 7rem;
+    height: 1.125rem;
+    margin: 0 4rem 0 0;
+    margin-bottom: 20px;
+  }
+
+  .book-tittle {
+    font-size: 1.375rem;
+    margin-bottom: 20px;
+  }
+
+  .buttons {
+    height: 1.188rem;
+    margin: 0.188rem 0.938rem 0.125rem 0;
+    font-size: 0.875rem;
+  }
 }
 
-.buttons button:nth-child(2) {
-  margin: 0 1rem;
-  padding: 0 1.2rem;
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
+.buttons:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

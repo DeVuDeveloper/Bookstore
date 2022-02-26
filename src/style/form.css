@@ -10,50 +10,48 @@
 
 form {
   display: flex;
-  width: 91%;
+  width: 100%;
 }
 
 .form-wrapper h3 {
-  align-self: flex-start;
+  align-self: center;
   font-family: Montserrat, sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: #888;
-  margin-left: 6.5rem;
-  margin-top: 20px;
+  margin-left: 5.5rem;
+  width: 100%;
 }
 
 input {
-  margin: 1.1rem 2.1rem 10rem 0.9rem;
-  padding: 0.6rem 2rem;
+  margin: 1.1rem 0.1rem 12rem 0.9rem;
+  padding: 0.6rem 0.5rem;
   border-radius: 4px;
   border: solid 1px var(--border-color);
   background-color: var(--white-color);
-  width: 50rem;
 }
 
 ::placeholder {
   color: #c4c4c4;
-  width: 4.75rem;
-  height: 1.188rem;
   font-family: Montserrat, sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: -0.15px;
 }
 
-.options {
-  display: inline-block;
-  font: inherit;
-  line-height: 1rem;
+.category {
+  position: relative;
+  top: 17px;
+}
+
+ .options {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-appearance: none;
-  margin: 1.1rem 2.1rem 10rem 0;
-  padding: 1rem 2rem;
+  padding: 0.6rem 1rem;
   border-radius: 4px;
   border: solid 1px var(--border-color);
   background-color: var(--white-color);
-  width: 25rem;
+  width: 7rem;
   background-image:
     linear-gradient(45deg, transparent 50%, gray 50%),
     linear-gradient(135deg, gray 50%, transparent 50%),
@@ -61,11 +59,11 @@ input {
   background-position:
     calc(100% - 20px) calc(1em + 2px),
     calc(100% - 15px) calc(1em + 2px),
-    calc(100% - 2.5em) 0.5em;
+    calc(100% - 0.5em) 0.5em;
   background-size:
     5px 5px,
     5px 5px,
-    1px 1.5em;
+    1px 0.5em;
   background-repeat: no-repeat;
 }
 
@@ -75,13 +73,13 @@ input {
     linear-gradient(135deg, transparent 50%, #0290ff 50%),
     linear-gradient(to right, #ccc, #ccc);
   background-position:
-    calc(100% - 15px) 1em,
-    calc(100% - 20px) 1em,
-    calc(100% - 2.5em) 0.5em;
+    calc(100% - 7px) 1em,
+    calc(100% - 10px) 1em,
+    calc(100% - 5.5em) 6.5em;
   background-size:
     5px 5px,
     5px 5px,
-    1px 1.5em;
+    1px 1em;
   background-repeat: no-repeat;
   color: #0290ff;
   outline: 0;
@@ -90,25 +88,140 @@ input {
 select:first-child {
   color: #c4c4c4;
   font-family: Montserrat, sans-serif;
-  font-size: 1rem;
-  letter-spacing: -0.15px;
+  font-size: 0.8rem;
 }
 
 .tittle {
-  width: 120rem;
+  width: 60rem;
   margin-left: 10px;
 }
 
 .add-btn {
   align-self: flex-start;
-  margin: 1.1rem 2.1rem 10rem 0;
-  padding: 1rem 1.1rem;
+  margin: 1.1rem 0.1rem 10rem 0;
+  padding: 0.5rem 0.8rem;
   border-radius: 3px;
   background-color: var(--blue-color);
-  font-size: 0.813rem;
+  font-size: 0.5rem;
   font-weight: bold;
-  letter-spacing: 0.5px;
   text-align: center;
   color: white;
-  width: 35rem;
+  width: 3rem;
+}
+
+@media screen and (min-width: 680px) {
+  .form-wrapper {
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: -120px;
+  }
+
+  form {
+    display: flex;
+    width: 91%;
+  }
+
+  .form-wrapper h3 {
+    align-self: flex-start;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #888;
+    margin-left: 6.5rem;
+    margin-top: 20px;
+  }
+
+  input {
+    margin: 1.1rem 2.1rem 10rem 0.9rem;
+    padding: 0.6rem 2rem;
+    border-radius: 4px;
+    border: solid 1px var(--border-color);
+    background-color: var(--white-color);
+    width: 50rem;
+  }
+
+  ::placeholder {
+    color: #c4c4c4;
+    width: 4.75rem;
+    height: 1.188rem;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    letter-spacing: -0.15px;
+  }
+
+  .options {
+    display: inline-block;
+    font: inherit;
+    line-height: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    margin: 1.1rem 2.1rem 10rem 0;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    border: solid 1px var(--border-color);
+    background-color: var(--white-color);
+    width: 25rem;
+    background-image:
+      linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+  }
+
+  .options:focus {
+    background-image:
+      linear-gradient(45deg, #0290ff 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, #0290ff 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+    color: #0290ff;
+    outline: 0;
+  }
+
+  select:first-child {
+    color: #c4c4c4;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    letter-spacing: -0.15px;
+  }
+
+  .tittle {
+    width: 120rem;
+    margin-left: 10px;
+  }
+
+  .add-btn {
+    align-self: flex-start;
+    margin: 1.1rem 2.1rem 10rem 0;
+    padding: 1rem 1.1rem;
+    border-radius: 3px;
+    background-color: var(--blue-color);
+    font-size: 0.813rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: white;
+    width: 35rem;
+  }
 }
