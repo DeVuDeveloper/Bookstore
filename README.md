@@ -2,8 +2,7 @@
 
 
 ## Live preview 
-  ## Heroku [link](https://murmuring-hollows-84269.herokuapp.com/).
-  ## Netlify [link](https://621a34b47f4ddae9c99da761--hopeful-euclid-a4fd8a.netlify.app/).
+  ## Netlify [link](https://621924426dd1430078c08a58--hopeful-euclid-a4fd8a.netlify.app/).
 
 
 ## Screenshots
