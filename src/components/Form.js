@@ -6,10 +6,11 @@ import '../style/form.css';
 
 const Form = () => {
   const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
   const [category, setCategory] = useState('');
   const dispatch = useDispatch();
   const ChangeTittle = (element) => setTitle(element.target.value);
-
+  const ChangeAuthor = (element) => setAuthor(element.target.value);
   const ChangeCategory = (element) => setCategory(element.target.value);
 
   const id = uuidv4();
@@ -19,12 +20,14 @@ const Form = () => {
     const newBook = {
       item_id: id,
       title,
+      author,
       category,
     };
     dispatch(addBookToAPI(newBook));
 
     setTitle('');
     setCategory('');
+    setAuthor('');
   };
 
   return (
@@ -32,8 +35,9 @@ const Form = () => {
       <h3>ADD NEW BOOK</h3>
       <form onSubmit={submitBookToStore}>
         <input className="tittle" value={title} onChange={ChangeTittle} type="text" placeholder="Book title" required />
-        <div className="category">
+        <input className="tittle" value={author} onChange={ChangeAuthor} type="text" placeholder="Author" required />
 
+        <div className="category">
           <select className="options" default value={category} id="category" name="category" onChange={ChangeCategory}>
             <option hidden>Category</option>
             <option value="classic">Classic</option>

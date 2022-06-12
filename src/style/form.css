@@ -1,16 +1,20 @@
+/* stylelint-disable property-no-vendor-prefix */
 .form-wrapper {
   background-color: var(--secondary-bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  position: fixed;
-  bottom: -120px;
+  margin-top: 20px;
+  padding: 0;
 }
 
 form {
   display: flex;
+  flex-direction: column;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .form-wrapper h3 {
@@ -24,15 +28,15 @@ form {
 }
 
 input {
-  margin: 1.1rem 0.1rem 12rem 0.9rem;
   padding: 0.6rem 0.5rem;
   border-radius: 4px;
-  border: solid 1px var(--border-color);
-  background-color: var(--white-color);
+  border: solid 1px rgb(170, 160, 160);
+  background-color: rgb(231, 220, 220);
+  margin-top: 10px;
 }
 
 ::placeholder {
-  color: #c4c4c4;
+  color: #746e6e;
   font-family: Montserrat, sans-serif;
   font-size: 0.8rem;
   letter-spacing: -0.15px;
@@ -41,6 +45,7 @@ input {
 .category {
   position: relative;
   top: 17px;
+  left: 10px;
 }
 
 .options {
@@ -49,8 +54,8 @@ input {
   -webkit-appearance: none;
   padding: 0.6rem 1rem;
   border-radius: 4px;
-  border: solid 1px var(--border-color);
-  background-color: var(--white-color);
+  border: solid 1px rgb(121, 118, 118);
+  background-color: rgb(231, 224, 224);
   width: 7rem;
   background-image:
     linear-gradient(45deg, transparent 50%, gray 50%),
@@ -86,7 +91,7 @@ input {
 }
 
 select:first-child {
-  color: #c4c4c4;
+  color: #1f1212;
   font-family: Montserrat, sans-serif;
   font-size: 0.8rem;
 }
@@ -97,9 +102,7 @@ select:first-child {
 }
 
 .add-btn {
-  align-self: flex-start;
-  margin: 1.1rem 0.1rem 10rem 0;
-  padding: 0.5rem 0.8rem;
+  padding: 0.2rem 0.8rem;
   border-radius: 3px;
   background-color: var(--blue-color);
   font-size: 0.5rem;
@@ -107,9 +110,16 @@ select:first-child {
   text-align: center;
   color: white;
   width: 3rem;
+  margin: 20px 10px;
 }
 
 @media screen and (min-width: 680px) {
+  form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
   .form-wrapper {
     background-color: var(--secondary-bg-color);
     display: flex;
@@ -120,9 +130,9 @@ select:first-child {
     bottom: -120px;
   }
 
-  form {
-    display: flex;
-    width: 91%;
+  .category {
+    position: relative;
+    top: 17px;
   }
 
   .form-wrapper h3 {
@@ -130,27 +140,18 @@ select:first-child {
     font-family: Montserrat, sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    color: #888;
+    color: rgb(68, 66, 66);
     margin-left: 6.5rem;
     margin-top: 20px;
   }
 
   input {
-    margin: 1.1rem 2.1rem 10rem 0.9rem;
-    padding: 0.6rem 2rem;
+    margin: 2rem 2.1rem 10rem 0.9rem;
+    padding: 0.1rem 2rem;
     border-radius: 4px;
-    border: solid 1px var(--border-color);
-    background-color: var(--white-color);
+    border: solid 1px rgb(141, 131, 131);
+    background-color: rgb(233, 230, 230);
     width: 50rem;
-  }
-
-  ::placeholder {
-    color: #c4c4c4;
-    width: 4.75rem;
-    height: 1.188rem;
-    font-family: Montserrat, sans-serif;
-    font-size: 1rem;
-    letter-spacing: -0.15px;
   }
 
   .options {
@@ -160,11 +161,12 @@ select:first-child {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-appearance: none;
-    margin: 1.1rem 2.1rem 10rem 0;
-    padding: 1rem 2rem;
+    margin: 0.8rem 2.1rem 10rem 0;
+    padding: 0.6rem 2rem;
     border-radius: 4px;
-    border: solid 1px var(--border-color);
-    background-color: var(--white-color);
+    border: solid 1px rgb(141, 131, 131);
+    background-color: rgb(233, 230, 230);
+    color: #000;
     width: 25rem;
     background-image:
       linear-gradient(45deg, transparent 50%, gray 50%),
@@ -200,7 +202,7 @@ select:first-child {
   }
 
   select:first-child {
-    color: #c4c4c4;
+    color: rgb(110, 108, 108);
     font-family: Montserrat, sans-serif;
     font-size: 1rem;
     letter-spacing: -0.15px;
@@ -223,5 +225,14 @@ select:first-child {
     text-align: center;
     color: white;
     width: 35rem;
+  }
+
+  ::placeholder {
+    color: #837676;
+    width: 4.75rem;
+    height: 1.188rem;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    letter-spacing: -0.15px;
   }
 }

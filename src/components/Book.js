@@ -14,23 +14,16 @@ const Books = () => {
     dispatch(getBooksFromAPI());
   }, []);
   return (
-
-    <>
-      <section className="book-wrapper">
-        {booksArr.map((book) => (
-          <div key={book.item_id} id={book.item_id} className="book-card">
-            <NewBook book={book} />
-            <Completed />
-            <Chapter />
-          </div>
-
-        ))}
-
-      </section>
+    <section className="book-wrapper">
+      {booksArr.map((book) => (
+        <div key={book.item_id} id={book.item_id} className="book-card">
+          <NewBook book={book} />
+          <Completed />
+          <Chapter />
+        </div>
+      ))}
       <Form />
-
-    </>
-
+    </section>
   );
 };
 export default Books;
